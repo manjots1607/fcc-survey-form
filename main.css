@@ -1,0 +1,115 @@
+
+            *,body{
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                transition: 0.5s;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+                
+            }
+            body{
+                background-color: rgb(3, 112, 103);
+            }
+            .container{
+                
+                display: grid;
+                /*height: 100%;*/
+            
+                grid-template-columns: 1fr 80% 1fr;
+                grid-template-rows: 100%;
+
+            }
+            .left{
+                background-color: rgb(3, 112, 103);
+           
+            }
+            .right{
+                background-color: rgb(3, 112, 103);
+              
+            }
+            .main{
+                background-color: rgb(3, 112, 103);
+                font-size: 14px;
+                padding: 25px 0 25px 0;
+
+             
+
+            }
+            .form-area{
+                background-color: white;
+                padding: 25px 5px 25px 5px;
+                margin: 0 5px 0 5px;
+                margin-top: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px 5px #aaa;
+            }
+            #title{
+                text-align: center;
+                color: azure;
+                
+            }
+            
+            #survey-form{
+                padding-top: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 10px;
+                grid-row-gap:20px;
+                
+            
+            }
+            #survey-form label{
+                text-align: right;
+
+            }
+            #survey-form>div{
+                text-align: left;
+                padding-left: 5px;
+                vertical-align: -webkit-baseline-middle;
+                padding-top:5px;
+            }
+            #survey-form>div>input,#survey-form>div>select{
+                width:80%;
+                height:35px;
+            }
+            #name:hover{
+                background-color: black;
+                color: white;
+            }
+            #survey-form>div>input[type="submit"]{
+                border-radius: 10px;
+                width:30%;
+                border: 0;
+                box-shadow: 0px 0px 10px 2px blue;
+                font-size: 20px;
+                font-weight: 800;
+            }
+            #submit:hover{
+                color: blue;
+                background-color: black;
+            }
+            #survey-form>div>input[type="radio"],#survey-form>div>input[type="checkbox"]{
+                width:10%;
+                height:20px;
+                text-align: left;
+            }
+            #survey-form>.submitbtn{
+                grid-column: 1/3;
+                text-align: center;
+            }
+            @media only screen and ( max-width: 420px){
+                #survey-form{
+                    grid-template-columns: 1fr;
+
+                }
+                #survey-form>.submitbtn{
+                grid-column: 1/2;
+                text-align: center;
+            }
+            #survey-form label{
+                text-align: left;
+
+            }
+            
+            }
